@@ -36,7 +36,7 @@ For example:
 
 ```yaml
 - name: Build
-  uses: patrickweaver/actions-eleventy@v1.3
+  uses: patrickweaver/actions-eleventy@master
   with:
     args: "--output=_dist"
     install_dependencies: true
