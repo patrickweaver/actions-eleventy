@@ -12,7 +12,7 @@ on: [push]
 
 jobs:
   build_deploy:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
       - name: Build
@@ -20,7 +20,7 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          publish_dir: _site 
+          publish_dir: _site
           publish_branch: gh-pages
           github_token: ${{ secrets.GITHUB_TOKEN }}
 ```
@@ -38,6 +38,6 @@ For example:
 - name: Build
   uses: TartanLlama/actions-eleventy@v1.3
   with:
-    args: --output _dist
+    args: "--output=_dist"
     install_dependencies: true
 ```
