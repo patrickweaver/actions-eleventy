@@ -1,6 +1,6 @@
 # GitHub Action for Eleventy
 
-Use this action to build your static website with [Eleventy](https://www.11ty.io/).
+Use this action to build your static website with [Eleventy](https://www.11ty.dev/).
 
 To use it, create a `.github/workflows/eleventy_build.yml` file which [uses this repository](https://help.github.com/en/articles/workflow-syntax-for-github-actions#jobsjob_idsteps) as an action.
 
